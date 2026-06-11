@@ -7,7 +7,7 @@ Frontend MVP for laboratory work 4: CI/CD automation, quality checks, and produc
 ## Links
 
 - Repository: https://github.com/wortpool/lab-4
-- Production: _add the Vercel URL after deployment_
+- Production: https://app-six-xi-33.vercel.app
 
 ## Scripts
 
