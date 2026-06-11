@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniDone</title>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">UniDone</p>
+          <h1>Менеджер навчальних задач</h1>
+        </div>
+        <span class="mode-badge" id="app-status">Loading mode</span>
+      </header>
+
+      <section class="task-panel" aria-labelledby="form-title">
+        <div>
+          <h2 id="form-title">Нова задача</h2>
+          <p>Додай задачу, зміни її статус і перевір, що дані зберігаються після перезавантаження.</p>
+        </div>
+        <form id="task-form" class="task-form">
+          <label>
+            Назва
+            <input id="task-title" name="title" type="text" placeholder="Наприклад: перевірити dist" required />
+          </label>
+          <label>
+            Пріоритет
+            <select id="task-priority" name="priority">
+              <option value="high">High</option>
+              <option value="medium" selected>Medium</option>
+              <option value="low">Low</option>
+            </select>
+          </label>
+          <button type="submit">Додати</button>
+        </form>
+      </section>
+
+      <section class="summary-grid" aria-label="Підсумок задач">
+        <article>
+          <span id="total-count">0</span>
+          <p>Усього</p>
+        </article>
+        <article>
+          <span id="progress-count">0</span>
+          <p>В роботі</p>
+        </article>
+        <article>
+          <span id="done-count">0</span>
+          <p>Готово</p>
+        </article>
+      </section>
+
+      <section class="board" id="task-board" aria-label="Список задач"></section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
